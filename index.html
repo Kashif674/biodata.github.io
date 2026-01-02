@@ -55,6 +55,66 @@
             z-index: 1;
             border: 1px solid #E0E0E0;
         }
+        @media (max-width: 768px) {
+    /* Header Mobile */
+    .header h1 {
+        font-size: 2.2em;
+    }
+    
+    .header .subtitle {
+        font-size: 1.1em;
+    }
+    
+    /* Photo Section Mobile */
+    .photo-section {
+        padding: 40px 20px;
+    }
+    
+    .photo-placeholder {
+        width: 180px;
+        height: 180px;
+    }
+    
+    /* Contact Section Mobile */
+    .contact-section {
+        padding: 30px 20px;
+        border-radius: 10px;
+    }
+    
+    .contact-section h3 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .contact-item {
+        padding: 15px 25px;
+        font-size: 1.1em;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .contact-item span {
+        font-size: 1.2em;
+    }
+    
+    /* Other Sections */
+    .content {
+        padding: 30px;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 1.6em;
+    }
+}
         
         @keyframes slideUp {
             from { 
