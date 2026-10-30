@@ -4,935 +4,652 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kashif Hasan - Marriage Profile</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Marriage profile (biodata) of Kashif Hasan, Lucknow.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --ink: #1F2A2E;
+            --muted: #5E6B70;
+            --navy: #123B4A;
+            --navy-2: #0B2A36;
+            --gold: #B8913A;
+            --gold-soft: #E9DCB8;
+            --ivory: #FBF8F2;
+            --paper: #FFFFFF;
+            --line: #ECE5D6;
+            --radius: 14px;
         }
-        
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
         body {
-            font-family: 'Lora', serif;
-            background: linear-gradient(135deg, #F5F5F5 0%, #ECECEC 100%);
-            padding: 20px;
-            min-height: 100vh;
-            animation: fadeIn 1s ease-in;
-            position: relative;
-            overflow-x: hidden;
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+            font-size: 15px;
+            color: var(--ink);
+            background-color: var(--ivory);
+            background-image:
+                radial-gradient(circle at 15% 10%, rgba(184, 145, 58, 0.07) 0, transparent 40%),
+                radial-gradient(circle at 85% 90%, rgba(18, 59, 74, 0.06) 0, transparent 40%);
+            background-attachment: fixed;
+            padding: 40px 16px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
         }
-        
-        /* Subtle background texture */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                radial-gradient(circle at 20% 30%, rgba(100, 100, 100, 0.03) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(100, 100, 100, 0.03) 0%, transparent 50%);
-            pointer-events: none;
-            z-index: 0;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
+
         .container {
-            max-width: 900px;
+            max-width: 880px;
             margin: 0 auto;
-            background: #FFFFFF;
-            box-shadow: 0 15px 60px rgba(0, 0, 0, 0.1);
-            border-radius: 20px;
+            background: var(--paper);
+            border-radius: 22px;
             overflow: hidden;
-            animation: slideUp 0.8s ease-out;
-            position: relative;
-            z-index: 1;
-            border: 1px solid #E0E0E0;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 20px 60px rgba(18, 59, 74, 0.12);
+            border: 1px solid var(--line);
+            animation: rise 0.7s ease-out both;
         }
-       
-        
-        @keyframes slideUp {
-            from { 
-                opacity: 0;
-                transform: translateY(50px) scale(0.95);
-            }
-            to { 
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
+
+        @keyframes rise {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
         }
-        
+
+        /* ---------- Header ---------- */
         .header {
-            background: linear-gradient(135deg, #3D3D3D 0%, #4A4A4A 50%, #3D3D3D 100%);
-            color: white;
-            padding: 60px 30px;
-            text-align: center;
             position: relative;
+            background:
+                linear-gradient(160deg, var(--navy) 0%, var(--navy-2) 100%);
+            color: #fff;
+            text-align: center;
+            padding: 46px 24px 130px;
             overflow: hidden;
         }
-        
-        /* Minimal subtle pattern */
+
+        /* Subtle 8-point star geometric pattern */
         .header::before {
             content: '';
             position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: repeating-linear-gradient(
-                60deg,
-                transparent,
-                transparent 30px,
-                rgba(255, 255, 255, 0.02) 30px,
-                rgba(255, 255, 255, 0.02) 60px
-            );
-            animation: waveMove 25s linear infinite;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23E9DCB8' stroke-opacity='0.09' stroke-width='1'%3E%3Crect x='22' y='22' width='36' height='36'/%3E%3Crect x='22' y='22' width='36' height='36' transform='rotate(45 40 40)'/%3E%3Ccircle cx='40' cy='40' r='8'/%3E%3C/g%3E%3C/svg%3E");
+            background-size: 80px 80px;
         }
-        
-        @keyframes waveMove {
-            0% { transform: translateX(0) translateY(0); }
-            100% { transform: translateX(50px) translateY(50px); }
-        }
-        
-        /* Minimal top accent */
+
         .header::after {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: linear-gradient(to right, transparent, #2C5F7F, transparent);
-            box-shadow: 0 0 10px rgba(44, 95, 127, 0.5);
+            left: 0; right: 0; bottom: 0;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
         }
-        
-        .decorative-top {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100%;
-            height: 100px;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,0 Q300,80 600,0 T1200,0 L1200,120 L0,120 Z" fill="rgba(44,95,127,0.08)"/></svg>');
-            background-size: cover;
-            animation: waveTop 8s ease-in-out infinite;
+
+        .header > * { position: relative; z-index: 1; }
+
+        .bismillah {
+            font-family: 'Amiri', serif;
+            font-size: 1.9em;
+            color: var(--gold-soft);
+            margin-bottom: 6px;
+            direction: rtl;
         }
-        
-        @keyframes waveTop {
-            0%, 100% { transform: translateX(-50%) translateY(0); }
-            50% { transform: translateX(-50%) translateY(-10px); }
+
+        .bismillah-en {
+            font-size: 0.82em;
+            font-style: italic;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 28px;
         }
-        
-        .decorative-bottom {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%) rotate(180deg);
-            width: 100%;
-            height: 100px;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,0 Q300,80 600,0 T1200,0 L1200,120 L0,120 Z" fill="rgba(44,95,127,0.08)"/></svg>');
-            background-size: cover;
-            animation: waveBottom 8s ease-in-out infinite;
-        }
-        
-        @keyframes waveBottom {
-            0%, 100% { transform: translateX(-50%) rotate(180deg) translateY(0); }
-            50% { transform: translateX(-50%) rotate(180deg) translateY(10px); }
-        }
-        
+
         .header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5em;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.6em;
             font-weight: 700;
-            margin-bottom: 15px;
-            text-shadow: 3px 3px 10px rgba(0,0,0,0.3);
-            position: relative;
-            z-index: 1;
-            animation: titleFade 1.2s ease-out 0.3s backwards;
-            color: #FFFFFF;
+            letter-spacing: 1px;
+            line-height: 1.05;
         }
-        
-        @keyframes titleFade {
-            from {
-                opacity: 0;
-                transform: translateY(-30px) scale(0.9);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
-        }
-        
+
         .header .subtitle {
-            font-size: 1.4em;
-            color: #B0B0B0;
-            font-weight: 600;
-            position: relative;
-            z-index: 1;
-            letter-spacing: 4px;
-            animation: subtitleFade 1.2s ease-out 0.5s backwards;
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            margin-top: 12px;
+            font-size: 0.85em;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: var(--gold-soft);
         }
-        
-        @keyframes subtitleFade {
-            from {
-                opacity: 0;
-                transform: scale(0.7);
-                letter-spacing: 10px;
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-                letter-spacing: 4px;
-            }
+
+        .header .subtitle::before,
+        .header .subtitle::after {
+            content: '';
+            width: 36px;
+            height: 1px;
+            background: var(--gold);
         }
-        
-        .islamic-pattern {
-            position: absolute;
-            width: 150px;
-            height: 150px;
-            opacity: 0.08;
-            z-index: 0;
-        }
-        
-        .pattern-left {
-            top: 30px;
-            left: 30px;
-            animation: float 6s ease-in-out infinite, rotate 20s linear infinite;
-        }
-        
-        .pattern-right {
-            bottom: 30px;
-            right: 30px;
-            animation: float 6s ease-in-out infinite reverse, rotate 20s linear infinite reverse;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) scale(1); }
-            50% { transform: translateY(-25px) scale(1.1); }
-        }
-        
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-        
+
+        /* ---------- Photo ---------- */
         .photo-section {
-            padding: 60px;
-            text-align: center;
-            background: linear-gradient(to bottom, #FAFAFA 0%, #F5F5F5 50%, #FAFAFA 100%);
-            border-bottom: 3px solid #2C5F7F;
+            display: flex;
+            justify-content: center;
+            margin-top: -100px;
             position: relative;
+            z-index: 2;
+        }
+
+        .photo-placeholder {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            padding: 6px;
+            background: conic-gradient(from 210deg, var(--gold), var(--gold-soft), var(--gold), #8C6B24, var(--gold));
+            box-shadow: 0 16px 40px rgba(11, 42, 54, 0.28);
+        }
+
+        .photo-placeholder img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center top;
+            border: 4px solid #fff;
+            background: #f2f2f2;
+        }
+
+        /* ---------- Quick facts ---------- */
+        .quick-facts {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin: 32px 48px 0;
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            background: var(--ivory);
             overflow: hidden;
         }
-        
-        .photo-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 90%;
-            height: 2px;
-            background: linear-gradient(to right, transparent, #2C5F7F, transparent);
-            box-shadow: 0 0 10px rgba(44, 95, 127, 0.3);
+
+        .fact {
+            text-align: center;
+            padding: 18px 10px;
+            border-right: 1px solid var(--line);
         }
-        
-        .photo-placeholder {
-            width: 240px;
-            height: 240px;
-            border-radius: 50%;
-            /* border: 6px solid #2C5F7F; */
-            margin: 0 auto;
-            background: #FFFFFF;
+
+        .fact:last-child { border-right: none; }
+
+        .fact i {
+            color: var(--gold);
+            font-size: 1.05em;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .fact .fact-value {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35em;
+            font-weight: 700;
+            color: var(--navy);
+            line-height: 1.2;
+        }
+
+        .fact .fact-label {
+            font-size: 0.72em;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--muted);
+        }
+
+        /* ---------- Content ---------- */
+        .content { padding: 20px 48px 48px; }
+
+        .section {
+            margin-top: 44px;
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .section.visible { opacity: 1; transform: none; }
+
+        .section-title {
             display: flex;
             align-items: center;
-            justify-content: center;
-            font-size: 1.1em;
-            color: #4A4A4A;
-            box-shadow: 
-                0 15px 40px rgba(0, 0, 0, 0.15),
-                0 0 0 15px rgba(44, 95, 127, 0.05),
-                0 0 0 30px rgba(44, 95, 127, 0.02);
-            position: relative;
-            overflow: hidden;
-            animation: photoZoom 1s ease-out 0.7s backwards, photoPulse 3s ease-in-out infinite;
-        }
-        
-        @keyframes photoZoom {
-            from {
-                opacity: 0;
-                transform: scale(0.3) rotate(-180deg);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1) rotate(0deg);
-            }
-        }
-        
-        @keyframes photoPulse {
-            0%, 100% { 
-                box-shadow: 
-                    0 15px 40px rgba(0, 0, 0, 0.15),
-                    0 0 0 15px rgba(44, 95, 127, 0.05),
-                    0 0 0 30px rgba(44, 95, 127, 0.02);
-            }
-            50% { 
-                box-shadow: 
-                    0 15px 50px rgba(0, 0, 0, 0.2),
-                    0 0 0 20px rgba(44, 95, 127, 0.08),
-                    0 0 0 40px rgba(44, 95, 127, 0.04);
-            }
-        }
-        
-        .photo-placeholder::after {
-            /* content: '📷 Add Your Photo Here'; */
-            position: absolute;
-            text-align: center;
-            padding: 20px;
-            font-weight: 600;
-            color: #4A4A4A;
-        }
-        
-        .photo-placeholder::before {
-            content: '';
-            position: absolute;
-            inset: -4px;
-            border-radius: 50%;
-            padding: 4px;
-            background: linear-gradient(45deg, #2C5F7F, #5A8FAF, #2C5F7F, #5A8FAF);
-            background-size: 300% 300%;
-            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-            -webkit-mask-composite: xor;
-            mask-composite: exclude;
-            animation: borderRotate 4s linear infinite, borderGlow 2s ease-in-out infinite;
-        }
-        
-        @keyframes borderRotate {
-            0% { 
-                transform: rotate(0deg);
-                background-position: 0% 50%;
-            }
-            100% { 
-                transform: rotate(360deg);
-                background-position: 100% 50%;
-            }
-        }
-        
-        @keyframes borderGlow {
-            0%, 100% { opacity: 0.6; }
-            50% { opacity: 1; }
-        }
-        
-        .content {
-            padding: 60px;
-            background: linear-gradient(to bottom, #FFFFFF 0%, #F8F8F8 50%, #FFFFFF 100%);
-        }
-        
-        .section {
-            margin-bottom: 50px;
-            animation: sectionFade 0.8s ease-out backwards;
-            transition: transform 0.3s ease;
-        }
-        
-        .section:hover {
-            transform: scale(1.01);
-        }
-        
-        .section:nth-child(1) { animation-delay: 0.9s; }
-        .section:nth-child(2) { animation-delay: 1s; }
-        .section:nth-child(3) { animation-delay: 1.1s; }
-        .section:nth-child(4) { animation-delay: 1.2s; }
-        .section:nth-child(5) { animation-delay: 1.3s; }
-        .section:nth-child(6) { animation-delay: 1.4s; }
-        .section:nth-child(7) { animation-delay: 1.5s; }
-        .section:nth-child(8) { animation-delay: 1.6s; }
-        
-        @keyframes sectionFade {
-            from {
-                opacity: 0;
-                transform: translateX(-30px) rotateY(-10deg);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0) rotateY(0deg);
-            }
-        }
-        
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.2em;
-            color: #3D3D3D;
-            margin-bottom: 30px;
-            padding: 0 0 15px 0;
-            background: transparent;
-            display: inline-block;
-            border: none;
+            gap: 14px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.9em;
             font-weight: 700;
-            position: relative;
-            text-shadow: none;
-            box-shadow: none;
-            transition: all 0.3s ease;
-            border-bottom: 3px solid #2C5F7F;
+            color: var(--navy);
+            margin-bottom: 20px;
         }
-        
-        .section-title::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -3px;
-            width: 60px;
-            height: 3px;
-            background: #5A8FAF;
-            transition: width 0.4s ease;
+
+        .section-title .icon {
+            flex: 0 0 auto;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 0.5em;
+            color: var(--gold);
+            background: var(--ivory);
+            border: 1px solid var(--gold-soft);
         }
-        
+
         .section-title::after {
-            content: '●';
-            position: absolute;
-            left: -30px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #2C5F7F;
-            font-size: 0.4em;
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, var(--gold-soft), transparent);
         }
-        
-        .section:hover .section-title {
-            color: #2C5F7F;
-        }
-        
-        .section:hover .section-title::before {
-            width: 100%;
-        }
-        
+
+        /* Label / value rows */
         .info-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin-top: 25px;
+            grid-template-columns: 1fr 1fr;
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            overflow: hidden;
         }
-        
+
         .info-item {
-            padding: 25px;
-            background: linear-gradient(135deg, #F8F8F8 0%, #F0F0F0 100%);
-            border-radius: 10px;
-            border-left: 5px solid #2C5F7F;
-            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            padding: 16px 22px;
+            border-bottom: 1px solid var(--line);
+            transition: background 0.25s ease;
         }
-        
-        .info-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(44, 95, 127, 0.1), transparent);
-            transition: left 0.8s ease;
-        }
-        
-        .info-item:hover::before {
-            left: 100%;
-        }
-        
-        .info-item::after {
-            content: '●';
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 0.8em;
-            color: rgba(44, 95, 127, 0.2);
-            transition: all 0.4s ease;
-        }
-        
-        .info-item:hover::after {
-            transform: scale(2);
-            color: rgba(44, 95, 127, 0.4);
-        }
-        
-        .info-item:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 
-                0 12px 30px rgba(0, 0, 0, 0.15),
-                0 0 0 3px rgba(44, 95, 127, 0.1);
-            border-left-width: 8px;
-            background: linear-gradient(135deg, #FFFFFF 0%, #F8F8F8 100%);
-        }
-        
+
+        .info-item:nth-child(odd) { border-right: 1px solid var(--line); }
+
+        .info-grid .info-item:nth-last-child(-n+2):nth-child(odd),
+        .info-grid .info-item:last-child { border-bottom: none; }
+
+        /* If a grid has an odd number of items, let the last one span the full width */
+        .info-grid .info-item:last-child:nth-child(odd) { grid-column: 1 / -1; border-right: none; }
+
+        .info-item:hover { background: var(--ivory); }
+
         .info-label {
-            font-weight: 700;
-            color: #3D3D3D;
-            font-size: 1.05em;
-            margin-bottom: 10px;
+            font-size: 0.74em;
+            font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            position: relative;
+            letter-spacing: 1.5px;
+            color: var(--muted);
         }
-        
+
         .info-value {
-            color: #5A5A5A;
-            font-size: 1.15em;
-            line-height: 1.7;
+            font-size: 1.08em;
             font-weight: 500;
+            color: var(--ink);
         }
-        
+
+        /* Family */
+        .family-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
         .family-member {
-            background: linear-gradient(135deg, #F8F8F8 0%, #F0F0F0 100%);
-            padding: 25px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            border-left: 5px solid #2C5F7F;
-            transition: all 0.5s ease;
             position: relative;
-            overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            padding: 20px 22px;
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            background: var(--paper);
+            transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
         }
-        
-        .family-member::before {
+
+        .family-member:hover { border-color: var(--gold-soft); }
+
+        .family-member h4 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35em;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px dashed var(--line);
+        }
+
+        .family-member h4 i { color: var(--gold); font-size: 0.75em; }
+
+        .family-member p {
+            font-size: 0.97em;
+            color: var(--muted);
+            margin: 4px 0;
+        }
+
+        .family-member p strong {
+            color: var(--ink);
+            font-weight: 600;
+        }
+
+        /* Text blocks */
+        .text-content {
+            padding: 22px 26px;
+            border-radius: var(--radius);
+            background: var(--ivory);
+            border: 1px solid var(--line);
+            color: var(--ink);
+            line-height: 1.85;
+        }
+
+        .text-content.address {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .text-content.address i {
+            color: var(--gold);
+            font-size: 1.3em;
+            margin-top: 5px;
+        }
+
+        .list-content p {
+            position: relative;
+            padding-left: 30px;
+            margin: 8px 0;
+        }
+
+        .list-content p::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: -100%;
+            left: 4px;
+            top: 0.62em;
+            width: 9px;
+            height: 9px;
+            background: var(--gold);
+            transform: rotate(45deg);
+            border-radius: 1px;
+        }
+
+        .list-content p.lead {
+            padding-left: 0;
+            font-weight: 500;
+            color: var(--navy);
+            margin-bottom: 12px;
+        }
+
+        .list-content p.lead::before { display: none; }
+
+        .link-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            border-radius: 999px;
+            background: var(--navy);
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.25s ease, transform 0.25s ease;
+        }
+
+        .link-button:hover { background: var(--navy-2); }
+        .link-button i { color: var(--gold-soft); }
+
+        /* ---------- Gallery ---------- */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .gallery-item {
+            position: relative;
+            aspect-ratio: 4 / 5;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            background: var(--ivory);
+            cursor: zoom-in;
+            padding: 0;
+        }
+
+        .gallery-item img {
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(44, 95, 127, 0.08), transparent);
-            transition: left 0.8s ease;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
         }
-        
-        .family-member:hover::before {
-            left: 100%;
+
+        .gallery-item:hover img { transform: scale(1.04); }
+
+        .gallery-item:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            z-index: 50;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            background: rgba(11, 42, 54, 0.92);
         }
-        
-        .family-member:hover {
-            transform: translateX(10px) scale(1.01);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-            background: linear-gradient(135deg, #FFFFFF 0%, #F8F8F8 100%);
-        }
-        
-        .family-member h4 {
-            color: #3D3D3D;
-            margin-bottom: 10px;
-            font-size: 1.3em;
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-            position: relative;
-            padding-bottom: 8px;
-            border-bottom: 2px solid rgba(44, 95, 127, 0.2);
-        }
-        
-        .family-member p {
-            color: #5A5A5A;
-            margin: 8px 0;
-            line-height: 1.8;
-            font-size: 1.05em;
-        }
-        
-        .text-content {
-            background: linear-gradient(135deg, #F8F8F8 0%, #F0F0F0 100%);
-            padding: 30px;
+
+        .lightbox.open { display: flex; }
+
+        .lightbox img {
+            max-width: 100%;
+            max-height: 88vh;
             border-radius: 10px;
-            line-height: 2;
-            color: #3D3D3D;
-            border-left: 5px solid #2C5F7F;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-            transition: all 0.4s ease;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
         }
-        
-        .text-content::before {
-            content: '';
+
+        .lightbox button {
             position: absolute;
-            top: -3px;
-            right: -3px;
-            bottom: -3px;
-            left: -3px;
-            background: linear-gradient(45deg, #2C5F7F, #5A8FAF, #2C5F7F);
-            background-size: 300% 300%;
-            border-radius: 10px;
-            opacity: 0;
-            z-index: -1;
-            transition: opacity 0.4s ease;
-            animation: gradientMove 5s ease infinite;
+            border: none;
+            background: rgba(255,255,255,0.12);
+            color: #fff;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            font-size: 1.1em;
+            cursor: pointer;
         }
-        
-        @keyframes gradientMove {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
-        
-        .text-content:hover {
-            transform: scale(1.01);
-            background: linear-gradient(135deg, #FFFFFF 0%, #F8F8F8 100%);
-        }
-        
-        .text-content:hover::before {
-            opacity: 0.05;
-        }
-        
-        .text-content p {
-            margin: 12px 0;
-            font-size: 1.05em;
-            position: relative;
-            padding-left: 25px;
-            text-decoration: none;
-            color: #5A5A5A;
-        }
-        
-        .text-content p::before {
-            content: '●';
-            position: absolute;
-            left: 0;
-            color: #2C5F7F;
-            font-weight: bold;
-            font-size: 0.8em;
-        }
-        
+
+        .lightbox button:hover { background: rgba(255,255,255,0.25); }
+        .lightbox .lb-close { top: 18px; right: 18px; }
+        .lightbox .lb-prev { left: 18px; top: 50%; transform: translateY(-50%); }
+        .lightbox .lb-next { right: 18px; top: 50%; transform: translateY(-50%); }
+
+        /* ---------- Contact ---------- */
         .contact-section {
-            background: linear-gradient(135deg, #3D3D3D 0%, #4A4A4A 50%, #3D3D3D 100%);
-            color: white;
-            padding: 50px;
+            margin-top: 52px;
+            padding: 40px 28px;
+            border-radius: 18px;
             text-align: center;
-            margin-top: 60px;
-            border-radius: 15px;
+            color: #fff;
+            background: linear-gradient(160deg, var(--navy) 0%, var(--navy-2) 100%);
             position: relative;
             overflow: hidden;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
         }
-        
+
         .contact-section::before {
             content: '';
             position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(44, 95, 127, 0.15) 0%, transparent 70%);
-            animation: contactPulse 6s ease-in-out infinite;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23E9DCB8' stroke-opacity='0.07' stroke-width='1'%3E%3Crect x='22' y='22' width='36' height='36'/%3E%3Crect x='22' y='22' width='36' height='36' transform='rotate(45 40 40)'/%3E%3C/g%3E%3C/svg%3E");
         }
-        
-        @keyframes contactPulse {
-            0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.3; }
-            50% { transform: scale(1.2) translate(20px, 20px); opacity: 0.6; }
-        }
-        
+
+        .contact-section > * { position: relative; }
+
         .contact-section h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.3em;
-            margin-bottom: 30px;
-            color: #FFFFFF;
-            position: relative;
-            z-index: 1;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 6px;
         }
-        
+
+        .contact-section .contact-note {
+            color: rgba(255,255,255,0.65);
+            font-size: 0.92em;
+            margin-bottom: 26px;
+        }
+
         .contact-info {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 50px;
-            margin-top: 30px;
-            position: relative;
-            z-index: 1;
+            gap: 14px;
         }
-        
+
         .contact-item {
-            display: flex;
+            display: inline-flex;
             align-items: center;
-            gap: 15px;
-            font-size: 1.3em;
-            padding: 20px 35px;
-            background: linear-gradient(135deg, rgba(44, 95, 127, 0.2), rgba(44, 95, 127, 0.1));
-            border-radius: 60px;
-            border: 2px solid rgba(44, 95, 127, 0.3);
-            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-        }
-        
-        .contact-item:hover {
-            background: linear-gradient(135deg, rgba(44, 95, 127, 0.35), rgba(44, 95, 127, 0.2));
-            transform: scale(1.1) translateY(-5px);
-            box-shadow: 0 10px 30px rgba(44, 95, 127, 0.3);
-            border-color: #2C5F7F;
-        }
-        
-        .contact-item span {
-            font-size: 1.3em;
-            animation: iconBounce 2s ease-in-out infinite;
-        }
-        
-        @keyframes iconBounce {
-            0%, 100% { transform: translateY(0) scale(1); }
-            50% { transform: translateY(-5px) scale(1.2); }
-        }
-        
-        .contact-item a {
-            color: white;
+            gap: 12px;
+            padding: 14px 24px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(233, 220, 184, 0.35);
+            color: #fff;
             text-decoration: none;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-            transition: all 0.4s ease;
-            font-weight: 500;
+            font-size: 1.02em;
+            transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+            word-break: break-all;
         }
-        
-        .contact-item a:hover {
-            border-bottom-color: #FFFFFF;
-            letter-spacing: 1px;
+
+        .contact-item:hover {
+            background: rgba(255,255,255,0.16);
+            border-color: var(--gold);
         }
-        
+
+        .contact-item i { color: var(--gold-soft); }
+
+        /* ---------- Footer ---------- */
         .footer {
-            background: #2A2A2A;
-            color: #999999;
             text-align: center;
-            padding: 30px;
-            font-size: 1em;
-            position: relative;
-            overflow: hidden;
+            padding: 22px 20px;
+            font-size: 0.88em;
+            color: var(--muted);
+            background: var(--ivory);
+            border-top: 1px solid var(--line);
         }
-        
-        .footer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(to right, transparent, #2C5F7F, transparent);
-        }
-        
-        .decorative-line {
-            height: 3px;
-            background: linear-gradient(90deg, transparent, #CCCCCC, #2C5F7F, #CCCCCC, transparent);
-            margin: 50px 0;
-            border-radius: 2px;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .decorative-line::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 50%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
-            animation: lineShine 4s ease-in-out infinite;
-        }
-        
-        @keyframes lineShine {
-            0% { left: -100%; }
-            100% { left: 200%; }
-        }
-        
-        .corner-ornament {
-            position: absolute;
-            width: 80px;
-            height: 80px;
-            opacity: 0.15;
-            transition: opacity 0.4s ease;
-        }
-        
-        .content:hover .corner-ornament {
-            opacity: 0.3;
-        }
-        
-        .ornament-tl {
-            top: 20px;
-            left: 20px;
-            border-top: 3px solid #2C5F7F;
-            border-left: 3px solid #2C5F7F;
-            border-top-left-radius: 15px;
-            animation: ornamentPulse 3s ease-in-out infinite;
-        }
-        
-        .ornament-tr {
-            top: 20px;
+
+        .footer .dot { color: var(--gold); margin: 0 8px; }
+
+        /* ---------- Print button ---------- */
+        .print-btn {
+            position: fixed;
             right: 20px;
-            border-top: 3px solid #2C5F7F;
-            border-right: 3px solid #2C5F7F;
-            border-top-right-radius: 15px;
-            animation: ornamentPulse 3s ease-in-out infinite 0.5s;
-        }
-        
-        .ornament-bl {
             bottom: 20px;
-            left: 20px;
-            border-bottom: 3px solid #2C5F7F;
-            border-left: 3px solid #2C5F7F;
-            border-bottom-left-radius: 15px;
-            animation: ornamentPulse 3s ease-in-out infinite 1s;
+            z-index: 10;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 18px;
+            border: none;
+            border-radius: 999px;
+            background: var(--gold);
+            color: #fff;
+            font-family: inherit;
+            font-size: 0.92em;
+            cursor: pointer;
+            box-shadow: 0 8px 20px rgba(184, 145, 58, 0.35);
+            transition: transform 0.2s ease, background 0.2s ease;
         }
-        
-        .ornament-br {
-            bottom: 20px;
-            right: 20px;
-            border-bottom: 3px solid #2C5F7F;
-            border-right: 3px solid #2C5F7F;
-            border-bottom-right-radius: 15px;
-            animation: ornamentPulse 3s ease-in-out infinite 1.5s;
+
+        .print-btn:hover { background: #9E7B2E; }
+
+        /* ---------- Responsive ---------- */
+        @media (max-width: 720px) {
+            body { padding: 0; }
+            .container { border-radius: 0; border: none; }
+            .header { padding: 36px 16px 115px; }
+            .bismillah { font-size: 1.5em; }
+            .header h1 { font-size: 2.6em; }
+            .header .subtitle { letter-spacing: 4px; font-size: 0.75em; }
+            .photo-placeholder { width: 168px; height: 168px; }
+            .quick-facts { grid-template-columns: 1fr 1fr; margin: 26px 16px 0; }
+            .fact:nth-child(2) { border-right: none; }
+            .fact:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+            .content { padding: 8px 16px 32px; }
+            .section { margin-top: 36px; }
+            .section-title { font-size: 1.6em; }
+            .info-grid, .family-grid { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+            .info-item:nth-child(odd) { border-right: none; }
+            .info-grid .info-item:nth-last-child(-n+2):nth-child(odd) { border-bottom: 1px solid var(--line); }
+            .info-grid .info-item:last-child { border-bottom: none; }
+            .contact-section { padding: 32px 18px; }
+            .contact-item { width: 100%; justify-content: center; }
+            .print-btn span { display: none; }
+            .print-btn { padding: 14px; }
         }
-        
-        @keyframes ornamentPulse {
-            0%, 100% { 
-                opacity: 0.15; 
-                box-shadow: 0 0 0 rgba(44, 95, 127, 0);
-            }
-            50% { 
-                opacity: 0.4; 
-                box-shadow: 0 0 15px rgba(44, 95, 127, 0.3);
-            }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation: none !important; transition: none !important; }
+            .section { opacity: 1; transform: none; }
         }
-        
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2.2em;
-            }
-            
-            .header .subtitle {
-                font-size: 1.1em;
-            }
-            
-            .content {
-                padding: 30px;
-            }
-            
-            .info-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .contact-info {
-                flex-direction: column;
-                gap: 20px;
-            }
-            
-            .section-title {
-                font-size: 1.6em;
-            }
-        }
-        
+
+        /* ---------- Print / Save as PDF ---------- */
         @media print {
-            body {
-                background: white;
-                padding: 0;
-            }
-            
-            .container {
-                box-shadow: none;
-            }
-            
-            .info-item, .family-member, .text-content {
-                break-inside: avoid;
-            }
+            @page { size: A4; margin: 10mm; }
+            body { background: #fff; padding: 0; font-size: 12px; }
+            .container { box-shadow: none; border: none; border-radius: 0; max-width: 100%; animation: none; }
+            .header, .contact-section { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .photo-placeholder { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .section { opacity: 1 !important; transform: none !important; margin-top: 22px; }
+            .info-item, .family-member, .text-content, .contact-section { break-inside: avoid; }
+            .section-title { break-after: avoid; }
+            .print-btn, .lightbox { display: none !important; }
+            .gallery-grid { grid-template-columns: repeat(4, 1fr); }
+            .gallery-item { break-inside: avoid; }
         }
-         @media (max-width: 768px) {
-    /* Header Mobile */
-    .header h1 {
-        font-size: 2.2em;
-    }
-    
-    .header .subtitle {
-        font-size: 1.1em;
-    }
-    
-    /* Photo Section Mobile */
-    .photo-section {
-        padding: 40px 20px;
-    }
-    
-    .photo-placeholder {
-        width: 180px;
-        height: 180px;
-    }
-    
-    /* Contact Section Mobile */
-    .contact-section {
-        padding: 30px 20px;
-        border-radius: 10px;
-    }
-    
-    .contact-section h3 {
-        font-size: 1.8em;
-        margin-bottom: 20px;
-    }
-    
-    .contact-info {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .contact-item {
-        padding: 15px 25px;
-        font-size: 1.1em;
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .contact-item span {
-        font-size: 1.2em;
-    }
-    
-    /* Other Sections */
-    .content {
-        padding: 5px;
-    }
-    
-    .info-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .section-title {
-        font-size: 1.6em;
-    }
-}
     </style>
 </head>
 <body>
     <div class="container">
         <!-- Header -->
-        <div class="header">
-            <div class="decorative-top"></div>
-            <svg class="islamic-pattern pattern-left" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="40" fill="none" stroke="#CCCCCC" stroke-width="2"/>
-                <circle cx="50" cy="50" r="30" fill="none" stroke="#CCCCCC" stroke-width="2"/>
-                <circle cx="50" cy="50" r="20" fill="none" stroke="#CCCCCC" stroke-width="2"/>
-                <circle cx="50" cy="50" r="10" fill="none" stroke="#CCCCCC" stroke-width="2"/>
-            </svg>
-            <svg class="islamic-pattern pattern-right" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="40" fill="none" stroke="#CCCCCC" stroke-width="2"/>
-                <circle cx="50" cy="50" r="30" fill="none" stroke="#CCCCCC" stroke-width="2"/>
-                <circle cx="50" cy="50" r="20" fill="none" stroke="#CCCCCC" stroke-width="2"/>
-                <circle cx="50" cy="50" r="10" fill="none" stroke="#CCCCCC" stroke-width="2"/>
-            </svg>
+        <header class="header">
+            <div class="bismillah" lang="ar">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
+            <div class="bismillah-en">In the name of Allah, the Most Gracious, the Most Merciful</div>
             <h1>Kashif Hasan</h1>
-            <div class="subtitle">MARRIAGE PROFILE</div>
-            <div class="decorative-bottom"></div>
-        </div>
-        
+            <div class="subtitle">Marriage Profile</div>
+        </header>
+
         <!-- Photo Section -->
         <div class="photo-section">
-            <div class="photo-placeholder"><img src="bioData/kashif.jpeg" alt=""></div>
+            <div class="photo-placeholder"><img src="bioData/kashif.jpeg" alt="Photo of Kashif Hasan"></div>
         </div>
-        
+
+        <!-- Quick Facts -->
+        <div class="quick-facts">
+            <div class="fact">
+                <i class="fa-solid fa-cake-candles"></i>
+                <div class="fact-value"><span class="js-age">26</span> Yrs</div>
+                <div class="fact-label">Age</div>
+            </div>
+            <div class="fact">
+                <i class="fa-solid fa-ruler-vertical"></i>
+                <div class="fact-value">5'3"</div>
+                <div class="fact-label">Height</div>
+            </div>
+            <div class="fact">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div class="fact-value">MCA</div>
+                <div class="fact-label">Education</div>
+            </div>
+            <div class="fact">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="fact-value">Lucknow</div>
+                <div class="fact-label">City</div>
+            </div>
+        </div>
+
         <!-- Main Content -->
-        <div class="content">
-            <div class="corner-ornament ornament-tl"></div>
-            <div class="corner-ornament ornament-tr"></div>
-            <div class="corner-ornament ornament-bl"></div>
-            <div class="corner-ornament ornament-br"></div>
-            
+        <main class="content">
+
             <!-- Personal Details -->
-            <div class="section">
-                <h2 class="section-title">Personal Details</h2>
+            <section class="section">
+                <h2 class="section-title"><span class="icon"><i class="fa-solid fa-user"></i></span>Personal Details</h2>
                 <div class="info-grid">
                     <div class="info-item">
                         <div class="info-label">Full Name</div>
@@ -944,7 +661,7 @@
                     </div>
                     <div class="info-item">
                         <div class="info-label">Age</div>
-                        <div class="info-value">26 Years</div>
+                        <div class="info-value"><span class="js-age">26</span> Years</div>
                     </div>
                     <div class="info-item">
                         <div class="info-label">Height</div>
@@ -967,17 +684,19 @@
                         <div class="info-value">Hindi, English, Urdu</div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="decorative-line"></div>
-            
+            </section>
+
             <!-- Education & Profession -->
-            <div class="section">
-                <h2 class="section-title">Education & Profession</h2>
+            <section class="section">
+                <h2 class="section-title"><span class="icon"><i class="fa-solid fa-briefcase"></i></span>Education &amp; Profession</h2>
                 <div class="info-grid">
                     <div class="info-item">
                         <div class="info-label">Qualification</div>
                         <div class="info-value">MCA (Master of Computer Applications)</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">College</div>
+                        <div class="info-value">Shri Ramswaroop Memorial College of Engineering &amp; Management (SRMCEM), Lucknow</div>
                     </div>
                     <div class="info-item">
                         <div class="info-label">Year of Completion</div>
@@ -989,7 +708,7 @@
                     </div>
                     <div class="info-item">
                         <div class="info-label">Company</div>
-                        <div class="info-value">In Geed Simulation Pvt. Ltd.</div>
+                        <div class="info-value">Geed Simulation Pvt. Ltd.</div>
                     </div>
                     <div class="info-item">
                         <div class="info-label">Since</div>
@@ -1000,112 +719,225 @@
                         <div class="info-value">₹30,000/-</div>
                     </div> -->
                 </div>
-            </div>
-            
-            <div class="decorative-line"></div>
-            
+            </section>
+
             <!-- Family Details -->
-            <div class="section">
-                <h2 class="section-title">Family Details</h2>
-                
-                <div class="family-member">
-                    <h4>Father</h4>
-                    <p><strong>Name:</strong> Syed Hasan Nawab</p>
-                    <p><strong>Qualification:</strong> M.Com</p>
-                    <p><strong>Occupation:</strong> Private Service</p>
+            <section class="section">
+                <h2 class="section-title"><span class="icon"><i class="fa-solid fa-people-roof"></i></span>Family Details</h2>
+                <div class="family-grid">
+                    <div class="family-member">
+                        <h4><i class="fa-solid fa-user-tie"></i>Father</h4>
+                        <p><strong>Name:</strong> Syed Hasan Nawab</p>
+                        <p><strong>Qualification:</strong> M.Com</p>
+                        <p><strong>Occupation:</strong> Private Service</p>
+                    </div>
+
+                    <div class="family-member">
+                        <h4><i class="fa-solid fa-person-dress"></i>Mother</h4>
+                        <p><strong>Name:</strong> Rehana Hasan</p>
+                        <p><strong>Qualification:</strong> B.A</p>
+                        <p><strong>Occupation:</strong> Housewife</p>
+                    </div>
+
+                    <div class="family-member">
+                        <h4><i class="fa-solid fa-user"></i>Elder Brother (Married)</h4>
+                        <p><strong>Qualification:</strong> M.Tech (AMU)</p>
+                        <p><strong>Occupation:</strong> Working in Dubai (6+ years)</p>
+                    </div>
+
+                    <div class="family-member">
+                        <h4><i class="fa-solid fa-user"></i>Sister (Married)</h4>
+                        <p><strong>Qualification:</strong> B.A., B.Ed</p>
+                    </div>
                 </div>
-                
-                <div class="family-member">
-                    <h4>Mother</h4>
-                    <p><strong>Name:</strong> Rehana Hasan</p>
-                    <p><strong>Qualification:</strong> B.A</p>
-                    <p><strong>Occupation:</strong> Housewife</p>
-                </div>
-                
-                <div class="family-member">
-                    <h4>Elder Brother (Married)</h4>
-                    <p><strong>Qualification:</strong> M.Tech (AMU)</p>
-                    <p><strong>Occupation:</strong> Working in Dubai (6+ years)</p>
-                </div>
-                
-                <div class="family-member">
-                    <h4>Sister (Married)</h4>
-                    <p><strong>Qualification:</strong> B.A., B.Ed</p>
-                </div>
-            </div>
-            
-            <div class="decorative-line"></div>
-            
+            </section>
+
             <!-- Address -->
-            <div class="section">
-                <h2 class="section-title">Address</h2>
-                <div class="text-content">
-                    366/006/431A, Golden City<br>
-                    Campwell Road, Lucknow<br>
-                    Uttar Pradesh, India
+            <section class="section">
+                <h2 class="section-title"><span class="icon"><i class="fa-solid fa-house"></i></span>Address</h2>
+                <div class="text-content address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        366/006/431A, Golden City<br>
+                        Campwell Road, Lucknow<br>
+                        Uttar Pradesh, India
+                    </div>
                 </div>
-            </div>
-            
-            <div class="decorative-line"></div>
-            
+            </section>
+
             <!-- Interests & Hobbies -->
-            <div class="section">
-                <h2 class="section-title">Interests & Hobbies</h2>
-                <div class="text-content">
+            <section class="section">
+                <h2 class="section-title"><span class="icon"><i class="fa-solid fa-star-and-crescent"></i></span>Interests &amp; Hobbies</h2>
+                <div class="text-content list-content">
                     <p>Meeting new people and sharing knowledge that benefits others</p>
                     <p>Seeking closeness to Ahlul Bayt (A.S.) and Divine pleasure</p>
                     <p>Value honesty and truthfulness; dislike dishonesty</p>
                     <p>Dedicated to serving the cause of Ahlul Bayt (A.S.)</p>
                     <p>Exploring and understanding verses of the Holy Quran</p>
                 </div>
-            </div>
-            
-            <div class="decorative-line"></div>
-            
+            </section>
+
             <!-- Partner Expectations -->
-            <div class="section">
-                <h2 class="section-title">Partner Expectations</h2>
-                <div class="text-content">
-                    <p>Looking for a religious and practicing Muslim woman who:</p>
+            <section class="section">
+                <h2 class="section-title"><span class="icon"><i class="fa-solid fa-heart"></i></span>Partner Expectations</h2>
+                <div class="text-content list-content">
+                    <p class="lead">Looking for a religious and practicing Muslim woman who:</p>
                     <p>Follows all Islamic principles and teachings</p>
                     <p>Observes proper hijab and Islamic dress code</p>
                     <p>Is modest, well-mannered, and family-oriented</p>
                     <p>Values mutual respect and traditional family values</p>
                     <p>Shares commitment to faith and Islamic way of life</p>
                 </div>
-            </div>
-            
-            <div class="decorative-line"></div>
-            
+            </section>
+
+            <!-- Photo Gallery -->
+            <!-- To add photos: upload them into the bioData folder,
+                 then add their file names to the galleryPhotos list near the bottom of this file. -->
+            <section class="section" id="gallery">
+                <h2 class="section-title"><span class="icon"><i class="fa-solid fa-images"></i></span>Photo Gallery</h2>
+                <div class="gallery-grid" id="galleryGrid"></div>
+            </section>
+
             <!-- Portfolio/Professional Links -->
-            <div class="section">
-                <h2 class="section-title">Professional Profile</h2>
-                <div class="text-content">
-                    <p><strong></strong> <a href="https://kashif674.github.io/" style="color: #2C5F7F; text-decoration: none !important; transition: all 0.3s ease;">Portfolio</a></p>
-    
-                </div>
-            </div>
-            
+            <section class="section">
+                <h2 class="section-title"><span class="icon"><i class="fa-solid fa-laptop-code"></i></span>Professional Profile</h2>
+                <a class="link-button" href="https://kashif674.github.io/" target="_blank" rel="noopener">
+                    <i class="fa-solid fa-globe"></i> View Portfolio
+                    <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.8em;"></i>
+                </a>
+            </section>
+
             <!-- Contact Section -->
-            <div class="contact-section">
+            <section class="contact-section">
                 <h3>Contact Information</h3>
+                <p class="contact-note">For marriage proposals, please get in touch</p>
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <span><i class="fa-solid fa-phone"></i></span>
-                        <a href="tel:+918090666127">+91 8090666127</a>
-                    </div>
-                    <div class="contact-item">
-                        <span><i class="fa-solid fa-envelope"></i></span>
-                        <a href="mailto:hasan.nawab59@gmail.com">hasan.nawab59@gmail.com</a>
-                    </div>
+                    <a class="contact-item" href="tel:+918090666127">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 8090666127</span>
+                    </a>
+                    <a class="contact-item" href="mailto:hasan.nawab59@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>hasan.nawab59@gmail.com</span>
+                    </a>
                 </div>
-            </div>
-        </div>
-        
+            </section>
+        </main>
+
         <!-- Footer -->
-        <div class="footer">
-            In the name of Allah, the Most Gracious, the Most Merciful • Contact for marriage proposal
-        </div>
+        <footer class="footer">
+            In the name of Allah, the Most Gracious, the Most Merciful<span class="dot">◆</span>Contact for marriage proposal
+        </footer>
     </div>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+        <button class="lb-close" type="button" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        <button class="lb-prev" type="button" aria-label="Previous photo"><i class="fa-solid fa-chevron-left"></i></button>
+        <img id="lightboxImg" src="" alt="">
+        <button class="lb-next" type="button" aria-label="Next photo"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <button class="print-btn" type="button" onclick="window.print()" aria-label="Download as PDF">
+        <i class="fa-solid fa-file-arrow-down"></i><span>Download PDF</span>
+    </button>
+
+    <script>
+        // ===== PHOTO GALLERY =====
+        // Add or remove photos here. Upload the image files to the bioData folder first.
+        var galleryPhotos = [
+            'bioData/kashif.jpeg',
+            // 'bioData/photo1.jpg',
+            // 'bioData/photo2.jpg',
+            // 'bioData/photo3.jpg',
+        ];
+
+        (function () {
+            var grid = document.getElementById('galleryGrid');
+            var section = document.getElementById('gallery');
+            var lb = document.getElementById('lightbox');
+            var lbImg = document.getElementById('lightboxImg');
+            var current = 0;
+            var shown = [];
+
+            galleryPhotos.forEach(function (src) {
+                var btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'gallery-item';
+                btn.setAttribute('aria-label', 'Open photo');
+                var img = document.createElement('img');
+                img.src = src;
+                img.alt = 'Photo of Kashif Hasan';
+                img.loading = 'lazy';
+                // Hide any photo that fails to load (wrong name or not uploaded yet)
+                img.onerror = function () {
+                    btn.remove();
+                    shown = shown.filter(function (s) { return s !== src; });
+                    if (!grid.children.length) section.style.display = 'none';
+                };
+                btn.appendChild(img);
+                btn.addEventListener('click', function () { open(shown.indexOf(src)); });
+                grid.appendChild(btn);
+                shown.push(src);
+            });
+
+            if (!galleryPhotos.length) section.style.display = 'none';
+
+            function open(i) {
+                current = i;
+                lbImg.src = shown[current];
+                lb.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
+            function close() {
+                lb.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+            function step(d) {
+                current = (current + d + shown.length) % shown.length;
+                lbImg.src = shown[current];
+            }
+
+            lb.querySelector('.lb-close').addEventListener('click', close);
+            lb.querySelector('.lb-prev').addEventListener('click', function () { step(-1); });
+            lb.querySelector('.lb-next').addEventListener('click', function () { step(1); });
+            lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+            document.addEventListener('keydown', function (e) {
+                if (!lb.classList.contains('open')) return;
+                if (e.key === 'Escape') close();
+                if (e.key === 'ArrowLeft') step(-1);
+                if (e.key === 'ArrowRight') step(1);
+            });
+        })();
+
+        // Auto-calculate age from date of birth so it never goes out of date
+        (function () {
+            var dob = new Date(1999, 8, 24); // 24 September 1999 (month is 0-based)
+            var now = new Date();
+            var age = now.getFullYear() - dob.getFullYear();
+            if (now.getMonth() < dob.getMonth() ||
+                (now.getMonth() === dob.getMonth() && now.getDate() < dob.getDate())) {
+                age--;
+            }
+            document.querySelectorAll('.js-age').forEach(function (el) { el.textContent = age; });
+        })();
+
+        // Gently reveal sections as they scroll into view
+        (function () {
+            var sections = document.querySelectorAll('.section');
+            if (!('IntersectionObserver' in window)) {
+                sections.forEach(function (s) { s.classList.add('visible'); });
+                return;
+            }
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (e) {
+                    if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+                });
+            }, { threshold: 0.12 });
+            sections.forEach(function (s) { io.observe(s); });
+            window.addEventListener('beforeprint', function () {
+                sections.forEach(function (s) { s.classList.add('visible'); });
+            });
+        })();
+    </script>
 </body>
 </html>
